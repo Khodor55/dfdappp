@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      transition: 0.5s ease}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: 0px 40px;
+    width: 100%;
+position: fixed;
+z-index: 4;
+
+}
+header img{
+    width: 100px;
+
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin-left: 19px;
+
+}
+header nav a:hover{
+    text-decoration: underline;
+    
+}
+/* ------ */
+.intro{
+    height: 100vh;
+    display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+text-align: center;
+background-color: rgba(52, 104, 0, 0.801);
+color: white;
+}
+.intro .i-t{
+font-weight: 800;
+font-size: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.intro .i-b{
+   
+    background-color: rgb(255, 255, 255);
+    margin-top: 40px;
+    justify-content: center;
+    color: rgba(52, 104, 0, 0.801);
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 40px;
+    width: 300px;
+    font-size: 20px;
+box-shadow: 0px 0px 10px black;
+border: 1px solid white;
+
+}
+.intro .i-b:hover{
+    transform: scale(1.1);
+}
+/* --- */
+.all-games{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.game{
+    border: 1px solid black;
+    width: 220px;
+    border-radius: 20px;
+    background-color: rgb(5, 51, 5);
+    margin: 30px;
+    color: white;
+   height: 300px;
+   box-shadow: 0px 0px 10px black;
+}
+.game:hover{
+    transform: scale(1.1);
+}
+.game .g-i{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.i-f{
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px;
+}
+.i-f .g-t{
+    font-size: 20px;
+    font-weight: 500;
+}
+.i-f .g-d{
+    width: 180px;
+
+}
+.game .play{
+
+direction: rtl;
+
+margin:9px;
+margin-left: 50px;
+background: none;
+border: none;
+font-size: 16px;
+color: rgb(0, 255, 13);
+text-decoration: underline;
+
+}
+.game .play:hover{
+    transform: scale(1.1);
+    text-decoration:none;
+   
+    
+}
+/* --- */
+.link{
+    background-color: black;
+    height: 45vh;
+}
+.link .l-l{
+    width: 100px;
+    
+}
+.l-i{
+    display: flex;
+
+}
+.icon{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+.icon:hover{
+    transform: scale(1.3);
+}
+.l-em{
+    color: white;
+    font-size: 10px;
+    margin: 0px 0px 10px 10px;
+ }
+ .l-t{
+    color: white;
+    font-size: 8px;
+    margin: 20px;
+    text-align: center;
+    opacity: 0.5;
+ }
+ @media (max-width:500px) {
+    .intro{
+        height: 70vh;
+    }
+    .intro .i-t{
+        font-weight: 800;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+        .intro .i-b{
+   
+            background-color: rgb(255, 255, 255);
+            margin-top: 40px;
+            justify-content: center;
+            color: rgba(52, 104, 0, 0.801);
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 40px;
+            width: 200px;
+            font-size: 20px;
+        box-shadow: 0px 0px 10px black;
+        border: 1px solid white;
+        }       
+        .game{
+            border: 1px solid black;
+            width: 220px;
+            border-radius: 20px;
+            background-color: rgb(5, 51, 5);
+            margin: 30px;
+            color: white;
+           height: 300px;
+           box-shadow: 0px 0px 10px black;
+        } 
+        .link{
+            height: 45vh;
+        }
+        header nav a{
+            font-size: 13px;
+            margin: 5px;
+        }
+        header img{
+            width: 70px;
+        }
+ }
